@@ -14,4 +14,5 @@ public class Ship {
 
     private String logo;
 
+
 }
