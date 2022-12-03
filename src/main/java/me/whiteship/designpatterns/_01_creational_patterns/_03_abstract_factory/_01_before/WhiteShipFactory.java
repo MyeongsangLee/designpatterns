@@ -8,8 +8,8 @@ public class WhiteShipFactory extends DefaultShipFactory {
     @Override
     public Ship createShip() {
         Ship ship = new Ship();
-        ship.setWhiteAnchor(new WhiteAnchor());
-        ship.setWhiteWheel(new WhiteWheel());
+        ship.setAnchor(new WhiteAnchor());
+        ship.setWheel(new WhiteWheel());
         return null;
     }
 }

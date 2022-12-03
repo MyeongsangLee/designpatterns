@@ -2,18 +2,27 @@ package me.whiteship.designpatterns._01_creational_patterns._02_factory_method._
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteAnchor;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteWheel;
+import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._02_after.Anchor;
+import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._02_after.Wheel;
 
-@Getter @Setter @ToString
+@Getter @Setter
 public class Ship {
 
     private String name;
+
     private String color;
+
     private String logo;
 
-    private WhiteAnchor whiteAnchor;
-    private WhiteWheel whiteWheel;
+    private Anchor Anchor;
+    private Wheel Wheel;
 
+    @Override
+    public String toString() {
+        return "Ship{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", logo='" + logo + '\'' +
+                '}';
+    }
 }
