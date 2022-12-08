@@ -1,4 +1,4 @@
-package me.whiteship.designpatterns._01_creational_patterns._05_prototypr._02_after;
+package me.whiteship.designpatterns._01_creational_patterns._05_prototype._02_after;
 
 import java.util.Objects;
 

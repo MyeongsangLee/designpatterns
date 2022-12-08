@@ -1,4 +1,4 @@
-package me.whiteship.designpatterns._01_creational_patterns._05_prototypr._01_before;
+package me.whiteship.designpatterns._01_creational_patterns._05_prototype._01_before;
 
 public class GithubRepository {
     private String user;
