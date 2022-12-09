@@ -1,7 +1,10 @@
 package me.whiteship.designpatterns._01_creational_patterns._05_prototype._02_after;
 
+import lombok.ToString;
+
 import java.util.Objects;
 
+@ToString
 public class GithubIssue implements Cloneable{
     private int id;
 
