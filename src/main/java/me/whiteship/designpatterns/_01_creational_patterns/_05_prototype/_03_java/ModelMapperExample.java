@@ -1,7 +1,7 @@
-package me.whiteship._05_prototype._03_java;
+package me.whiteship.designpatterns._01_creational_patterns._05_prototype._03_java;
 
-import me.whiteship._05_prototype._02_after.GithubIssue;
-import me.whiteship._05_prototype._02_after.GithubRepository;
+import me.whiteship.designpatterns._01_creational_patterns._05_prototype._02_after.GithubIssue;
+import me.whiteship.designpatterns._01_creational_patterns._05_prototype._02_after.GithubRepository;
 import org.modelmapper.ModelMapper;
 
 public class ModelMapperExample {
