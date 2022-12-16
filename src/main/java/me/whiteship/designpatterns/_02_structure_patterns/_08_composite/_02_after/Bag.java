@@ -3,7 +3,7 @@ package me.whiteship.designpatterns._02_structure_patterns._08_composite._02_aft
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bag implements Component{
+public class Bag implements Component {
 
     private List<Component> components = new ArrayList<>();
 
@@ -17,6 +17,6 @@ public class Bag implements Component{
 
     @Override
     public int getPrice() {
-        return components.stream().mapToInt(s -> s.getPrice()).sum();
+        return components.stream().mapToInt(Component::getPrice).sum();
     }
 }

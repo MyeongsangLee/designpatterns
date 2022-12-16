@@ -9,13 +9,17 @@ public class Client {
         Bag bag = new Bag();
         bag.add(doranBlade);
         bag.add(healPotion);
+        Character character = new Character(bag);
 
         Client client = new Client();
         client.printPrice(doranBlade);
         client.printPrice(bag);
+        client.printPrice(character);
+
     }
 
     private void printPrice(Component component) {
         System.out.println(component.getPrice());
     }
+
 }

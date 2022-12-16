@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class Item implements Component{
+public class Item implements Component {
     private String name;
     private int price;
 }
