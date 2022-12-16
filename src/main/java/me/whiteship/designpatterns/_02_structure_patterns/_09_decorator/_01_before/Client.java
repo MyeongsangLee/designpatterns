@@ -9,7 +9,7 @@ public class Client {
     }
 
     private void writeComment(String comment) {
-        commentService.addComments(comment);
+        commentService.addComment(comment);
     }
 
     public static void main(String[] args) {

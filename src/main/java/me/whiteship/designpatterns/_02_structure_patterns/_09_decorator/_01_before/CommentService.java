@@ -2,7 +2,7 @@ package me.whiteship.designpatterns._02_structure_patterns._09_decorator._01_bef
 
 public class CommentService {
 
-    public void addComments(String comment) {
+    public void addComment(String comment) {
         System.out.println(comment);
     }
 }

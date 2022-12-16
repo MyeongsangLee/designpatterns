@@ -3,8 +3,8 @@ package me.whiteship.designpatterns._02_structure_patterns._09_decorator._01_bef
 public class TrimmingCommentService extends CommentService{
 
     @Override
-    public void addComments(String comment) {
-        super.addComments(trim(comment));
+    public void addComment(String comment) {
+        super.addComment(trim(comment));
     }
 
     private String  trim(String comment) {

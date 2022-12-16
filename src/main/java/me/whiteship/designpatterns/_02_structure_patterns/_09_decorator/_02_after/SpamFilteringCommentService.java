@@ -1,6 +1,10 @@
-package me.whiteship.designpatterns._02_structure_patterns._09_decorator._01_before;
+package me.whiteship.designpatterns._02_structure_patterns._09_decorator._02_after;
 
-public class SpamFilteringCommentService extends CommentService {
+public class SpamFilteringCommentService extends CommentDecorator{
+
+    public SpamFilteringCommentService(CommentService commentService) {
+        super(commentService);
+    }
 
     @Override
     public void addComment(String comment) {
