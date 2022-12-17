@@ -2,12 +2,14 @@ package me.whiteship.designpatterns._02_structure_patterns._11_flyweight._02_aft
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 @RequiredArgsConstructor
 @Getter
-public class Font {
+@ToString
+public final class Font {
 
-    final String family;
-    final int Size;
+    private final String family;
+    private final int size;
 
 }

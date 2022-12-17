@@ -2,6 +2,7 @@ package me.whiteship.designpatterns._02_structure_patterns._11_flyweight._02_aft
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class FontFactory {
 
@@ -15,6 +16,13 @@ public class FontFactory {
             Font newFont = new Font(split[0], Integer.parseInt(split[1]));
             cache.put(font, newFont);
             return newFont;
+        }
+    }
+
+    public void printCache() {
+        Set<String> strings = cache.keySet();
+        for (String string : strings) {
+            System.out.println(string);
         }
     }
 }
