@@ -1,8 +1,8 @@
 package me.whiteship.designpatterns._02_structure_patterns._09_decorator._02_after;
 
 public class App {
-    private static boolean enabledSpamFilter = false;
-    private static boolean enabledTrimming = false;
+    private static boolean enabledSpamFilter = true;
+    private static boolean enabledTrimming = true;
 
     public static void main(String[] args) {
         CommentService commentService = new DefaultCommentService();

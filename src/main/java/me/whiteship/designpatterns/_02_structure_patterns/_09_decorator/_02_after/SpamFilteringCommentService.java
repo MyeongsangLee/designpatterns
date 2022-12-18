@@ -8,6 +8,7 @@ public class SpamFilteringCommentService extends CommentDecorator{
 
     @Override
     public void addComment(String comment) {
+        System.out.println("spam");
         boolean isSpam = isSpam(comment);
         if (!isSpam) {
             super.addComment(comment);
