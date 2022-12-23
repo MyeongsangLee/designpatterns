@@ -17,6 +17,8 @@ public class Board {
     }
 
     public Iterator<Post> getRecentPostIterator() {
-        return new RecentPostIterator(posts);
+        return new RecentPostIterator(this.posts);
     }
+
+
 }

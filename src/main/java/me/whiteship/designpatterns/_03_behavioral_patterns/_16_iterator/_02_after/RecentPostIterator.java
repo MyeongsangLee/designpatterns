@@ -5,11 +5,11 @@ import java.util.Iterator;
 import java.util.List;
 
 public class RecentPostIterator implements Iterator<Post> {
-
     private Iterator<Post> internalIterator;
 
     public RecentPostIterator(List<Post> posts) {
-        Collections.sort(posts, (p1, p2)-> p2.getCreateDateTime().compareTo(p1.getCreateDateTime()));
+        Collections.sort(posts, (p1, p2) -> p2.getCreateDateTime().compareTo(p1.getCreateDateTime()));
+//        Collections.sort(posts, (p1, p2) -> p2.getCreateDateTime().compareTo(p1.getCreateDateTime()));
         this.internalIterator = posts.iterator();
     }
 
@@ -22,4 +22,6 @@ public class RecentPostIterator implements Iterator<Post> {
     public Post next() {
         return this.internalIterator.next();
     }
+
+
 }

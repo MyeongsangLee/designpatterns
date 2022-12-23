@@ -1,13 +1,12 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._16_iterator._01_before;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import org.springframework.stereotype.Service;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Getter
-@Service
+@Setter
 public class Post {
 
     private String title;
