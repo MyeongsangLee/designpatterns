@@ -21,5 +21,4 @@ public class Game {
         this.redTeamScore = gameSave.getRedTeamScore();
     }
 
-
 }

@@ -4,8 +4,8 @@ public class Client {
 
     public static void main(String[] args) {
         Game game = new Game();
-        game.setRedTeamScore(10);
         game.setBlueTeamScore(10);
+        game.setRedTeamScore(10);
 
         System.out.println(game);
 
@@ -18,7 +18,5 @@ public class Client {
 
         game.restore(save);
         System.out.println(game);
-
     }
-
 }
