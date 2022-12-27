@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+//Originator
 @Setter
 @Getter
 @ToString

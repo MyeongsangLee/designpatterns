@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+//memento
 @RequiredArgsConstructor
 @Getter
 public class GameSave {

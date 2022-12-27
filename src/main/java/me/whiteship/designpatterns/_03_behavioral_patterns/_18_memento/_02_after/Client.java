@@ -1,5 +1,6 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._18_memento._02_after;
 
+//caretaker
 public class Client {
 
     public static void main(String[] args) {
