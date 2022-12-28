@@ -21,16 +21,15 @@ public class ChatServer {
     }
 
     public void unregister(String subject, Subscriber subscriber) {
-        if (subject.contains(subject)) {
+        if (subscribers.containsKey(subject)) {
             subscribers.get(subject).remove(subscriber);
         }
     }
 
     public void sendMessage(User user, String subject, String message) {
-        List<Subscriber> subscribers1 = subscribers.get(subject);
         if (subscribers.containsKey(subject)) {
             String userMessage = user.getName() + ": " + message;
-            subscribers.get(subject).forEach(subscriber -> subscriber.handleMessage(userMessage));
+            subscribers.get(subject).forEach(s -> s.handleMessage(userMessage));
         }
     }
 }
