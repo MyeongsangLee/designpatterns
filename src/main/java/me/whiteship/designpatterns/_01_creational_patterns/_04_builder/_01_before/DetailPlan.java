@@ -6,7 +6,6 @@ import lombok.*;
 @AllArgsConstructor
 public class DetailPlan {
     private int day;
-
     private String plan;
 
 }
