@@ -10,7 +10,7 @@ public class Client {
         BlueLightRedLight blueLightRedLight = new BlueLightRedLight();
         blueLightRedLight.blueLight(new Normal());
         blueLightRedLight.redLight(new Faster());
-        
+
         blueLightRedLight.blueLight(new Speed() {
             @Override
             public void blueLight() {

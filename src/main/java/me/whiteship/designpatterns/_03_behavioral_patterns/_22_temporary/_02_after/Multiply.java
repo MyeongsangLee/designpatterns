@@ -6,9 +6,9 @@ public class Multiply extends FileProcessor{
         super(path);
     }
 
-    @Override
+    //@Override
     protected int getResult(int result, int number) {
-        System.out.println(result + " : " + number);
+        if (result == 0) result = 1;
         return result *= number;
     }
 }
