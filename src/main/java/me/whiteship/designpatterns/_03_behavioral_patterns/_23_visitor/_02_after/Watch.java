@@ -2,8 +2,8 @@ package me.whiteship.designpatterns._03_behavioral_patterns._23_visitor._02_afte
 
 public class Watch implements Device{
     @Override
-    public void print(Circle triangle) {
-        System.out.println("print Circle to Watch");
+    public void print(Triangle triangle) {
+        System.out.println("print Triangle to Watch");
     }
 
     @Override
@@ -12,7 +12,7 @@ public class Watch implements Device{
     }
 
     @Override
-    public void print(Triangle triangle) {
-        System.out.println("print Triangle to Watch");
+    public void print(Circle circle) {
+        System.out.println("print Circle to Watch");
     }
 }

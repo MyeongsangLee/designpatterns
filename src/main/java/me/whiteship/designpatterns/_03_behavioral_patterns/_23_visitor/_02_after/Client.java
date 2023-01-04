@@ -3,10 +3,8 @@ package me.whiteship.designpatterns._03_behavioral_patterns._23_visitor._02_afte
 public class Client {
 
     public static void main(String[] args) {
-        Shape rectangle = new Rectangle();
-//        Device device = new Phone();
-        Device device = new Pad();
-
-        rectangle.accept(device);
+        Phone phone = new Phone();
+        Rectangle rectangle = new Rectangle();
+        rectangle.accept(phone);
     }
 }
