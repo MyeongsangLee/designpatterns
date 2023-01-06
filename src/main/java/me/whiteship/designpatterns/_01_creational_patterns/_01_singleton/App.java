@@ -4,8 +4,8 @@ import java.io.*;
 
 public class App {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Settings3 settings1 = Settings3.getInstance();
-        Settings3 settings2 = Settings3.getInstance();
+        Settings4 settings1 = Settings4.getInstance();
+        Settings4 settings2 = Settings4.getInstance();
         System.out.println(settings1 == settings2);
 
         //try() close 자동으로 됨

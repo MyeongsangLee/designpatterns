@@ -5,8 +5,8 @@ import java.io.*;
 public class AppSerializable {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Settings4 settings1 = Settings4.getInstance();
-        Settings4 settings2 = Settings4.getInstance();
+        Settings5 settings1 = Settings5.getInstance();
+        Settings5 settings2 = Settings5.getInstance();
         System.out.println(settings1 == settings2);
 
         //try() close 자동으로 됨
@@ -14,9 +14,9 @@ public class AppSerializable {
             out.writeObject(settings1);
         }
 
-        Settings4 settings3 = null;
+        Settings5 settings3 = null;
         try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("settings.obj"))) {
-            settings3 =(Settings4)in.readObject();
+            settings3 =(Settings5)in.readObject();
         }
 
         //false 해결 readResolve

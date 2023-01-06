@@ -6,13 +6,13 @@ import java.lang.reflect.InvocationTargetException;
 
 public class AppReflection {
     public static void main(String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        Settings3 settings1 = Settings3.getInstance();
-        Settings3 settings2 = Settings3.getInstance();
+        Settings4 settings1 = Settings4.getInstance();
+        Settings4 settings2 = Settings4.getInstance();
         System.out.println(settings1 == settings2);
 
-        Constructor<Settings3> declaredConstructor = Settings3.class.getDeclaredConstructor();
+        Constructor<Settings4> declaredConstructor = Settings4.class.getDeclaredConstructor();
         declaredConstructor.setAccessible(true);
-        Settings3 settings3 = declaredConstructor.newInstance();
+        Settings4 settings3 = declaredConstructor.newInstance();
 
         System.out.println(settings1 == settings3);
     }
