@@ -4,7 +4,7 @@ public class Client {
     public static void main(String[] args) {
         Client client = new Client();
         client.print(new WhiteShipFactory(), "whiteship", "aaa@aaa.com");
-        client.print(new BlackShipFactory(), "blackship", "aaa@aaa.com");
+//        client.print(new BlackShipFactory(), "blackship", "aaa@aaa.com");
 //        Ship whiteship = new WhiteShipFactory().orderShip("Whiteship", "keesun@mail.com");
 //        System.out.println(whiteship);
 //
