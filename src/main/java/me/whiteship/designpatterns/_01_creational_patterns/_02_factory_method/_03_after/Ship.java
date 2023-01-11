@@ -2,8 +2,8 @@ package me.whiteship.designpatterns._01_creational_patterns._02_factory_method._
 
 import lombok.Getter;
 import lombok.Setter;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._02_after.Anchor;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._02_after.Wheel;
+import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._03_after.Anchor;
+import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._03_after.Wheel;
 
 @Getter @Setter
 public class Ship {

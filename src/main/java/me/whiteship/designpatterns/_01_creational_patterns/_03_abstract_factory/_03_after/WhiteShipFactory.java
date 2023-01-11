@@ -1,12 +1,10 @@
-package me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._02_after;
+package me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._03_after;
 
 import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._03_after.DefaultShipFactory;
 import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._03_after.Ship;
-import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._03_after.WhiteShip;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteAnchor;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._01_before.WhiteWheel;
 
 public class WhiteShipFactory extends DefaultShipFactory {
+
     private ShipPartsFactory shipPartsFactory;
 
     public WhiteShipFactory(ShipPartsFactory shipPartsFactory) {
@@ -15,7 +13,7 @@ public class WhiteShipFactory extends DefaultShipFactory {
 
     @Override
     public Ship createShip() {
-        Ship ship = new WhiteShip();
+        Ship ship = new Ship();
         ship.setAnchor(shipPartsFactory.createAnchor());
         ship.setWheel(shipPartsFactory.createWheel());
         return ship;
