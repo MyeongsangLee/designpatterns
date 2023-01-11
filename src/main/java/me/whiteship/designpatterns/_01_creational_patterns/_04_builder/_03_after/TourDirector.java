@@ -12,7 +12,7 @@ public class TourDirector {
     }
 
     public TourPlan goLasVegas() {
-        TourPlan tourPlan = this.defaultTourBuilder
+        TourPlan tourPlan = this.defaultTourBuilder.newInstance()
                 .title("즐거운 나의여행")
                 .nightsAndDays(3, 4)
                 .startDate(LocalDate.of(2023, 1, 11))
