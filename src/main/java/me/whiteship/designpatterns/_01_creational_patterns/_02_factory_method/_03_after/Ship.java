@@ -15,6 +15,7 @@ public class Ship {
     private String logo;
 
     private Anchor Anchor;
+
     private Wheel Wheel;
 
     @Override

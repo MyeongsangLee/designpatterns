@@ -4,7 +4,6 @@ import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._0
 import me.whiteship.designpatterns._01_creational_patterns._02_factory_method._03_after.Ship;
 
 public class WhiteShipFactory extends DefaultShipFactory {
-
     private ShipPartsFactory shipPartsFactory;
 
     public WhiteShipFactory(ShipPartsFactory shipPartsFactory) {
