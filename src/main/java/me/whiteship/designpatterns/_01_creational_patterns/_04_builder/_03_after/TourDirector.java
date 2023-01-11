@@ -5,23 +5,22 @@ import me.whiteship.designpatterns._01_creational_patterns._04_builder._01_befor
 import java.time.LocalDate;
 
 public class TourDirector {
-    private TourPlanBuilder tourPlanBuilder;
+    private DefaultTourBuilder defaultTourBuilder;
 
-    public TourDirector(TourPlanBuilder tourPlanBuilder) {
-        this.tourPlanBuilder = tourPlanBuilder;
+    public TourDirector(DefaultTourBuilder defaultTourBuilder) {
+        this.defaultTourBuilder = defaultTourBuilder;
     }
 
-    public TourPlan cancunTour() {
-        TourPlan plan = tourPlanBuilder.title("칸쿤")
+    public TourPlan goLasVegas() {
+        TourPlan tourPlan = this.defaultTourBuilder
+                .title("즐거운 나의여행")
                 .nightsAndDays(3, 4)
-                .startDate(LocalDate.now())
-                .whereToStay("칸툰 호텔")
-                .addPlan(1, "수영장")
-                .addPlan(2, "호텔")
-                .addPlan(3, "비치")
-                .addPlan(4, "전통시장")
-                .addPlan(5, "박물관")
-                .getPlan();
-        return plan;
+                .startDate(LocalDate.of(2023, 1, 11))
+                .whereToStay("라스베이거스")
+                .addPlan(1, "트레져아일랜드")
+                .addPlan(1, "세렌디옹")
+                .addPlan(3, "벨라지오")
+                .getTourPlan();
+        return tourPlan;
     }
 }

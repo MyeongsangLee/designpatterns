@@ -2,11 +2,11 @@ package me.whiteship.designpatterns._01_creational_patterns._04_builder._03_afte
 
 import me.whiteship.designpatterns._01_creational_patterns._04_builder._01_before.TourPlan;
 
-public class App {
+public class Client {
 
     public static void main(String[] args) {
         TourDirector tourDirector = new TourDirector(new DefaultTourBuilder());
-        TourPlan tourPlan = tourDirector.cancunTour();
+        TourPlan tourPlan = tourDirector.goLasVegas();
 
         System.out.println(tourPlan);
     }

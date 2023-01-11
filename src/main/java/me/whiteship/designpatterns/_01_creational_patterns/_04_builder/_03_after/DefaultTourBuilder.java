@@ -8,11 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DefaultTourBuilder implements TourPlanBuilder{
+
     private String title;
     private int nights;
     private int days;
     private LocalDate startDate;
     private String whereToStay;
+
     private List<DetailPlan> plans;
 
     @Override
@@ -42,15 +44,15 @@ public class DefaultTourBuilder implements TourPlanBuilder{
 
     @Override
     public TourPlanBuilder addPlan(int day, String plan) {
-        if (plans == null) {
-            plans = new ArrayList<>();
+        if (this.plans == null) {
+            this.plans = new ArrayList<DetailPlan>();
         }
-        plans.add(new DetailPlan(day, plan));
+        this.plans.add(new DetailPlan(day, plan));
         return this;
     }
 
     @Override
-    public TourPlan getPlan() {
+    public TourPlan getTourPlan() {
         return new TourPlan(title, nights, days, startDate, whereToStay, plans);
     }
 }
