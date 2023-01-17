@@ -1,4 +1,4 @@
-package me.whiteship.designpatterns._02_structure_patterns._07_bridge._04_append;
+package me.whiteship.designpatterns._02_structure_patterns._07_bridge._04_my_after;
 
 public class Rectangle extends Shape{
 
