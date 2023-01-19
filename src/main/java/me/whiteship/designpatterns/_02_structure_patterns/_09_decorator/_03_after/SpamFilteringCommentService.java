@@ -1,6 +1,6 @@
 package me.whiteship.designpatterns._02_structure_patterns._09_decorator._03_after;
 
-public class SpamFilteringCommentService extends CommentDecorator{
+public class SpamFilteringCommentService extends CommentDecorator {
 
     public SpamFilteringCommentService(CommentService commentService) {
         super(commentService);
@@ -8,10 +8,8 @@ public class SpamFilteringCommentService extends CommentDecorator{
 
     @Override
     public void addComment(String comment) {
-        System.out.println("spam");
-
         boolean isSpam = isSpam(comment);
-        if (!isSpam) {
+        if (!isSpam){
             super.addComment(comment);
         }
     }

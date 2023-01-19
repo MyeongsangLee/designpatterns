@@ -10,5 +10,4 @@ public class Client {
     public void writeComment(String comment) {
         commentService.addComment(comment);
     }
-
 }
