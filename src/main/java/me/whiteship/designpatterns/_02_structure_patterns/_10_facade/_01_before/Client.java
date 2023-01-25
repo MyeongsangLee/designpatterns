@@ -1,5 +1,7 @@
 package me.whiteship.designpatterns._02_structure_patterns._10_facade._01_before;
 
+
+
 import jakarta.mail.Message;
 import jakarta.mail.MessagingException;
 import jakarta.mail.Session;
