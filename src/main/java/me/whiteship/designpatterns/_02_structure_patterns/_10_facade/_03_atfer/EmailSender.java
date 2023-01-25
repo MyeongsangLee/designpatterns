@@ -18,6 +18,10 @@ public class EmailSender {
         this.emailSettings = emailSettings;
     }
 
+    /**
+     * 
+     * @param emailMessage
+     */
     public void sendEmail(EmailMessage emailMessage) {
 //        String to = "keesun@whiteship.me";
 //        String from = "whiteship@whiteship.me";
