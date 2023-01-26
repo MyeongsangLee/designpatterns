@@ -19,7 +19,7 @@ public class EmailSender {
     }
 
     /**
-     * 
+     *
      * @param emailMessage
      */
     public void sendEmail(EmailMessage emailMessage) {
