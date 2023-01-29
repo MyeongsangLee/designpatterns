@@ -5,12 +5,12 @@ public class Light {
     private boolean isOn;
 
     public void on() {
-        System.out.println("스위치를 켭니다.");
+        System.out.println("전등이 켜졌습니다.");
         this.isOn = true;
     }
 
     public void off() {
-        System.out.println("스위치를 끕니다.");
+        System.out.println("전등이 껴졌습니다.");
         this.isOn = false;
     }
 

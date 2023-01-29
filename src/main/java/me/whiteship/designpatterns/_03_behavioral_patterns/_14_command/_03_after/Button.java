@@ -9,17 +9,11 @@ public class Button {
     }
 
     public void press() {
-        this.command.execute();
-    }
-
-    public void undo() {
-        this.command.undo();
+        command.execute();
     }
 
     public static void main(String[] args) {
         Button button = new Button(new LightOnCommand(new Light()));
         button.press();
-        button.undo();
-
     }
 }
