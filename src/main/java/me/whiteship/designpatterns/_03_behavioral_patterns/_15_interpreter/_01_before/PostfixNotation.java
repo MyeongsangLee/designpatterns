@@ -1,7 +1,6 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._15_interpreter._01_before;
 
 import lombok.RequiredArgsConstructor;
-import me.whiteship.designpatterns._03_behavioral_patterns._15_interpreter._03_after.PostfixExpression;
 
 import java.util.Stack;
 
