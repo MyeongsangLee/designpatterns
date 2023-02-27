@@ -1,27 +1,9 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._20_state._03_after;
 
-import lombok.Getter;
+public interface OnlineCourse {
 
-import java.util.ArrayList;
-import java.util.List;
+    void addReview(String review, Student student);
 
-@Getter
-public class OnlineCourse {
-
-    private State state;
-    private List<String> reviews = new ArrayList<>();
-    private List<Student> students = new ArrayList<>();
-
-    public void addReview(String review, Student student) {
-        this.state.addReview(review, student);
-    }
-
-    public void addStudent(Student student) {
-        this.state.addStudent(student);
-    }
-
-    public void changeState(State state) {
-        this.state = state;
-    }
+    void addStudent(Student student);
 
 }

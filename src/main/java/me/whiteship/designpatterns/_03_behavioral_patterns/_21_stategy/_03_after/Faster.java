@@ -1,6 +1,6 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._21_stategy._03_after;
 
-public class Fast implements Speed{
+public class Faster implements Speed{
 
     @Override
     public void blueLight() {

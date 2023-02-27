@@ -24,10 +24,9 @@ public abstract class FileProcessor {
         }
     }
 
-    protected abstract int getResult(int result, int number);
-
-//    private int getResult(int result, String line) {
-//        result += Integer.parseInt(line);
+    public abstract int getResult(int result, int number);
+//    private int getResult(int result, int number) {
+//        result += number;
 //        return result;
 //    }
 }

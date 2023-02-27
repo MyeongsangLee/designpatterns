@@ -2,9 +2,9 @@ package me.whiteship.designpatterns._03_behavioral_patterns._23_visitor._03_afte
 
 public interface Device {
 
-    void print(Rectangle rectangle);
+    void printTo(Rectangle rectangle);
 
-    void print(Circle circle);
+    void printTo(Triangle triangle);
 
-    void print(Triangle triangle);
+    void printTo(Circle circle);
 }

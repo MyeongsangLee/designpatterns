@@ -1,22 +1,23 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._20_state._03_after;
 
-import java.util.HashSet;
-import java.util.Set;
+import lombok.ToString;
 
+import java.util.ArrayList;
+import java.util.List;
+
+@ToString
 public class Student {
 
     private String name;
-    private Set<OnlineCourse> onlineCourses = new HashSet<>();
 
-    public Student(String name) {
-        this.name = name;
+    private List<OnlineCourse> privateCourses = new ArrayList<>();
+
+    public boolean isPrivateClass(OnlineCourse onlineCourse) {
+        return privateCourses.contains(onlineCourse);
     }
 
-    public void addPrivate(OnlineCourse onlineCourse) {
-        this.onlineCourses.add(onlineCourse);
+    public void addPrivateCourse(OnlineCourse onlineCourse) {
+        privateCourses.add(onlineCourse);
     }
 
-    public boolean isAvailable(OnlineCourse onlineCourse) {
-        return this.onlineCourses.contains(onlineCourse);
-    }
 }
