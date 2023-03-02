@@ -1,13 +1,8 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._17_mediator._04_after;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter
-@Getter
 public abstract class Colleague {
 
-    protected String name;
+    private String name;
     private String message;
     private Mediator mediator;
 
@@ -15,13 +10,30 @@ public abstract class Colleague {
         this.name = name;
     }
 
-    public void send() {
-        System.out.println("메시지를 보냅니다.");
-        System.out.println();
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
-        mediator.mediate(this);
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMediator(Mediator mediator) {
+        this.mediator = mediator;
+    }
+
+    public void send() {
+        System.out.println("메시지 보냅니다");
+        System.out.println();
+        this.mediator.mediate(this);
+    }
+
+    public String getName() {
+        return name;
     }
 
     public abstract void receive(Colleague colleague);
+
+
 
 }

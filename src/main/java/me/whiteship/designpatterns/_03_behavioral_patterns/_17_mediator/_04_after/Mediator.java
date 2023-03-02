@@ -2,6 +2,7 @@ package me.whiteship.designpatterns._03_behavioral_patterns._17_mediator._04_aft
 
 public interface Mediator {
 
-    void mediate(Colleague colleague);
+    void addColleague(Colleague colleague);
 
+    void mediate(Colleague colleague);
 }

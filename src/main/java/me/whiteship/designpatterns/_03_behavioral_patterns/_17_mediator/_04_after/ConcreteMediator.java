@@ -7,12 +7,18 @@ public class ConcreteMediator implements Mediator{
 
     private List<Colleague> colleagues = new ArrayList<>();
 
+
+    @Override
     public void addColleague(Colleague colleague) {
         this.colleagues.add(colleague);
     }
 
     @Override
     public void mediate(Colleague colleague) {
-        this.colleagues.forEach(c -> c.receive(c));
+
+        this.colleagues.forEach(c -> {
+            System.out.println("\t등록 : " + c.getName());
+            c.receive(colleague);
+        });
     }
 }

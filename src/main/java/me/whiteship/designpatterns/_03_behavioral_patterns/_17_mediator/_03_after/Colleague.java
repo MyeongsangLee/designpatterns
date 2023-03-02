@@ -4,7 +4,6 @@ public abstract class Colleague {
 
     protected String name;
     private String message;
-
     private Mediator mediator;
 
     public Colleague(String name) {
