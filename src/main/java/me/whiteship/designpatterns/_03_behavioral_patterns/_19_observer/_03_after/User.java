@@ -1,5 +1,8 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._19_observer._03_after;
 
+import lombok.Getter;
+
+@Getter
 public class User implements Subscriber{
     private String name;
 
@@ -7,12 +10,8 @@ public class User implements Subscriber{
         this.name = name;
     }
 
-    public String getName() {
-        return name;
-    }
-
     @Override
-    public void handleMessage(String message) {
-        System.out.println(this.name + " : " + message);
+    public void handlerMessage(String message) {
+        System.out.println(name + " : " + message);
     }
 }

@@ -2,5 +2,5 @@ package me.whiteship.designpatterns._03_behavioral_patterns._19_observer._03_aft
 
 public interface Subscriber {
 
-    void handleMessage(String message);
+    void handlerMessage(String message);
 }

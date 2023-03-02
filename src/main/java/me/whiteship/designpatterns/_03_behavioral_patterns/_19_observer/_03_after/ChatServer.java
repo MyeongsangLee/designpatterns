@@ -10,24 +10,27 @@ public class ChatServer {
     private Map<String, List<Subscriber>> subscribers = new HashMap<>();
 
     public void register(String subject, Subscriber subscriber) {
-        if (this.subscribers.containsKey(subject)) {
-            this.subscribers.get(subject).add(subscriber);
+        if (subscribers.containsKey(subject)) {
+            subscribers.get(subject).add(subscriber);
         } else {
-            ArrayList<Subscriber> arrayList = new ArrayList<>();
-            arrayList.add(subscriber);
-            this.subscribers.put(subject, arrayList);
+            List<Subscriber> list = new ArrayList<>();
+            list.add(subscriber);
+            subscribers.put(subject, list);
         }
     }
 
-    public void unregister(String subject, Subscriber subscriber) {
-        this.subscribers.get(subject).remove(subscriber);
+    public void unRegister(String subject, Subscriber subscriber) {
+        if (subscribers.containsKey(subject)) {
+            subscribers.get(subject).remove(subscriber);
+        }
     }
 
     public void sendMessage(User user, String subject, String message) {
-        if (this.subscribers.containsKey(subject)) {
-            String userMessage = user.getName() + " : " + message;
-            this.subscribers.get(subject).forEach(subscriber -> subscriber.handleMessage(userMessage));
-        }
 
+        if (subscribers.containsKey(subject)) {
+            String sendMessage = user.getName() + " : " + message;
+            subscribers.get(subject).forEach(subscriber -> subscriber.handlerMessage(sendMessage));
+        }
     }
+
 }
