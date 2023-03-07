@@ -13,8 +13,15 @@ public class MyApp {
     }
 
     public static void main(String[] args) {
-        MyApp myApp = new MyApp(new Game());
-        myApp.press();
-        myApp.press();
+//        MyApp myApp = new MyApp(new Game());
+//        myApp.press();
+//        myApp.press();
+
+        Button button = new Button(new Light());
+        button.press();
+        button.press();
+        button.press();
+        button.press();
+
     }
 }

@@ -8,7 +8,6 @@ public class PrintRequestHandler extends RequestHandler{
     @Override
     public void handler(Request request) {
         System.out.println("출력");
-        //super.handler(request);
-        System.out.println(request.getBody());
+        super.handler(request);
     }
 }

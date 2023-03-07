@@ -6,5 +6,7 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class Request {
+
     private String body;
+
 }

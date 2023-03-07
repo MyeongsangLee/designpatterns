@@ -3,8 +3,8 @@ package me.whiteship.designpatterns._03_behavioral_patterns._14_command._01_befo
 public class Button {
     private Light light;
 
-    public Button(Light game) {
-        this.light = game;
+    public Button(Light light) {
+        this.light = light;
     }
 
     public void press() {
