@@ -3,24 +3,19 @@ package me.whiteship.designpatterns._02_structure_patterns._08_composite._03_aft
 public class Client {
 
     public static void main(String[] args) {
-        Item itemA = new Item("itemA", 1000);
-        Item itemB = new Item("itemB", 2000);
+        Item doranBlade = new Item("도란검", 450);
+        Item healPotion = new Item("체력 물약", 50);
+
         Bag bag = new Bag();
-        bag.add(itemA);
-        bag.add(itemB);
-        Character character = new Character(bag);
+        bag.add(doranBlade);
+        bag.add(healPotion);
 
         Client client = new Client();
-
-        client.printPrice(itemA);
-        client.printPrice(itemB);
+        client.printPrice(doranBlade);
         client.printPrice(bag);
-        client.printPrice(character);
-
     }
-    private void printPrice(Component component) {
 
+    private void printPrice(Component component) {
         System.out.println(component.getPrice());
     }
-
 }

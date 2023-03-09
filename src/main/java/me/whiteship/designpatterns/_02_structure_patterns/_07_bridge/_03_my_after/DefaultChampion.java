@@ -12,26 +12,26 @@ public class DefaultChampion implements Champion{
 
     @Override
     public void move() {
-        System.out.printf("%s %s move\n", skin.getName(), this.name);
+        System.out.println( this.name + " : " + skin.getName() + " move");
     }
 
     @Override
     public void skillQ() {
-        System.out.printf("%s %s skillQ\n", skin.getName(), this.name);
+        System.out.println( this.name + " : " + skin.getName() + " skillQ");
     }
 
     @Override
     public void skillW() {
-        System.out.printf("%s %s skillW\n", skin.getName(), this.name);
+        System.out.println( this.name + " : " + skin.getName() + " skillW");
     }
 
     @Override
     public void skillE() {
-        System.out.printf("%s %s skillE\n", skin.getName(), this.name);
+        System.out.println( this.name + " : " + skin.getName() + " skillE");
     }
 
     @Override
     public void skillR() {
-        System.out.printf("%s %s skillR\n", skin.getName(), this.name);
+        System.out.println( this.name + " : " + skin.getName() + " skillR");
     }
 }
