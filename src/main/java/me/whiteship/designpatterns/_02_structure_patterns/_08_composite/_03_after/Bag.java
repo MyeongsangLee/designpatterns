@@ -4,19 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bag implements Component{
-
-    private List<Component> components = new ArrayList<>();
+    private List<Component> lists = new ArrayList<>();
 
     public void add(Component component) {
-        components.add(component);
-    }
-
-    public List<Component> getItems() {
-        return components;
+        this.lists.add(component);
     }
 
     @Override
     public int getPrice() {
-        return components.stream().mapToInt(Component::getPrice).sum();
+        return this.lists.stream().mapToInt(Component::getPrice).sum();
     }
 }
