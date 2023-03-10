@@ -1,0 +1,15 @@
+package me.whiteship.designpatterns._03_behavioral_patterns._15_interpreter._05_after;
+
+import me.whiteship.designpatterns._03_behavioral_patterns._15_interpreter._04_after.PostfixExpression;
+import me.whiteship.designpatterns._03_behavioral_patterns._15_interpreter._04_after.PostfixParser;
+
+import java.util.Map;
+
+public class App {
+
+    public static void main(String[] args) {
+        PostfixExpression expression = PostfixParser.parse("xyz+-");
+        int result = expression.interpret(Map.of('x', 1, 'y', 2, 'z', 3));
+        System.out.println(result);
+    }
+}

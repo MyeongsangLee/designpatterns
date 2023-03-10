@@ -1,7 +1,5 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._15_interpreter._03_after;
 
-import jakarta.persistence.criteria.CriteriaBuilder;
-
 import java.util.Map;
 
 public interface PostfixExpression {

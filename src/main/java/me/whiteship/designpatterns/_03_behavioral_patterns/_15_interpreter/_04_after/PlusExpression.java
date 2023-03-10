@@ -13,6 +13,6 @@ public class PlusExpression implements PostfixExpression {
 
     @Override
     public int interpret(Map<Character, Integer> context) {
-        return left.interpret(context) + right.interpret(context);
+        return this.left.interpret(context) + this.right.interpret(context);  //Variable interprete(c)
     }
 }
