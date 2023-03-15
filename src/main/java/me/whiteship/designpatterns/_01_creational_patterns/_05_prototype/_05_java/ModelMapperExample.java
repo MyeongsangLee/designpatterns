@@ -1,4 +1,4 @@
-package me.whiteship.designpatterns._01_creational_patterns._05_prototype._03_java;
+package me.whiteship.designpatterns._01_creational_patterns._05_prototype._05_java;
 
 import me.whiteship.designpatterns._01_creational_patterns._05_prototype._02_after.GithubIssue;
 import me.whiteship.designpatterns._01_creational_patterns._05_prototype._02_after.GithubRepository;

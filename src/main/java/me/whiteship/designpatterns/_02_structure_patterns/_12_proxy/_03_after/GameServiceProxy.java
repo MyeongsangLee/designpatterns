@@ -6,13 +6,18 @@ public class GameServiceProxy implements GameService{
 
     @Override
     public void startGame() {
-
+        long before = System.currentTimeMillis();
         if (this.gameService == null) {
-            System.out.println("DefaultGameService");
+            System.out.println("원본");
             this.gameService = new DefaultGameService();
+        } else {
+            System.out.println("proxy");
         }
+        gameService.startGame();
 
-        System.out.println("Proxy");
-        this.gameService.startGame();
+        long after = System.currentTimeMillis();
+
+        System.out.println(after - before);
+
     }
 }
