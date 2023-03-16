@@ -11,6 +11,9 @@ public class Client {
         Employees clone = (Employees) employees.clone();
         clone.addData("클론");
 
+        employees.getEmployees().forEach(s -> System.out.println(s));
+        System.out.println();
+        clone.getEmployees().forEach(s -> System.out.println(s));
 
     }
 }

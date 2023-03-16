@@ -19,6 +19,10 @@ public class Employees implements Cloneable{
         employees.add(data);
     }
 
+    public List<String> getEmployees() {
+        return employees;
+    }
+
     @Override
     public Object clone() throws CloneNotSupportedException {
         List<String> temp = new ArrayList<>();
