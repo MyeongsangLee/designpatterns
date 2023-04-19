@@ -1,6 +1,8 @@
 package me.whiteship.designpatterns._03_behavioral_patterns._13_chain_of_responsibility._03_after;
 
-public abstract class RequestHandler {
+import me.whiteship.designpatterns._03_behavioral_patterns._13_chain_of_responsibility._01_before.Request;
+
+public class RequestHandler {
 
     private RequestHandler nextHandler;
 
@@ -9,11 +11,10 @@ public abstract class RequestHandler {
     }
 
     public void handler(Request request) {
-        if (nextHandler != null) {
+        if (this.nextHandler != null)
             nextHandler.handler(request);
-        } else {
+        else
             System.out.println(request.getBody());
-        }
     }
 
 }
